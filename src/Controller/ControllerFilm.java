@@ -55,7 +55,8 @@ public class ControllerFilm {
             daoFilm.insert(filmBaru);
 
             JOptionPane.showMessageDialog(null, "data berhasil ditambahkan.");
-
+            
+            halamanTable.dispose();
             new ViewFilm();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error: " + e.getMessage());
